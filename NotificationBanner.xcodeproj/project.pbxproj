@@ -166,6 +166,7 @@
 				TargetAttributes = {
 					8232558A1EB872AB006F95C3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dh.NotificationBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -374,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dh.NotificationBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

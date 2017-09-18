@@ -26,13 +26,13 @@ public enum QueuePosition {
 public class NotificationBannerQueue: NSObject {
     
     /// The default instance of the NotificationBannerQueue
-    public static let `default` = NotificationBannerQueue()
+    @objc public static let `default` = NotificationBannerQueue()
     
     /// The notification banners currently placed on the queue
-    private(set) var banners: [BaseNotificationBanner] = []
+    @objc private(set) var banners: [BaseNotificationBanner] = []
     
     /// The current number of notification banners on the queue
-    public var numberOfBanners: Int {
+    @objc public var numberOfBanners: Int {
         return banners.count
     }
     
@@ -67,7 +67,7 @@ public class NotificationBannerQueue: NSObject {
         Shows the next notificaiton banner on the queue if one exists
         -parameter callback: The closure to execute after a banner is shown or when the queue is empty
     */
-    func showNext(callback: ((_ isEmpty: Bool) -> Void)) {
+    @objc func showNext(callback: ((_ isEmpty: Bool) -> Void)) {
 
         if !banners.isEmpty {
           banners.removeFirst()
@@ -89,7 +89,7 @@ public class NotificationBannerQueue: NSObject {
     /**
         Removes all notification banners from the queue
     */
-    public func removeAll() {
+    @objc public func removeAll() {
         banners.removeAll()
     }
 }
